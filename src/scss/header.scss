@@ -1,0 +1,115 @@
+%headertopfonts {
+   font-family: JosefinSans;
+   font-size: 16px;
+   line-height: 19px;
+   color: #f1f1f1;
+   font-weight: 600;
+}
+
+.header {
+   width: 1920px;
+   height: 122px;
+}
+.header__top {
+   width: 100%;
+   height: 44px;
+   background-color: rgba(126, 51, 224, 1);
+   @extend %headertopfonts;
+   .header-top__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1173px;
+      height: 100%;
+      margin: 0 auto;
+
+      .header-contacts {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 368px;
+         height: 100%;
+      }
+      .header-contacts_email {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: center;
+         align-items: center;
+         &::before {
+            content: url(../img/header/header-top/mail.svg);
+            margin-top: 4px;
+            margin-right: 12px;
+            width: 16px;
+            height: 16px;
+         }
+      }
+      .header-contacts_phone {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: center;
+         align-items: center;
+         &::before {
+            content: url(../img/header/header-top/phone.svg);
+            margin-right: 12px;
+            width: 16px;
+            height: 16px;
+         }
+      }
+      .header-right-bar {
+         width: 351px;
+         .hheader-right-bar__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+         .right-bar__item {
+         }
+         .item-arrow::after {
+            content: url(../img/header/header-top/arrow.svg);
+            margin-left: 6px;
+            width: 10px;
+            height: 15px;
+         }
+         .item-login::after {
+            content: url(../img/header/header-top/user.svg);
+            margin-left: 4px;
+            width: 16px;
+            height: 16px;
+         }
+         .item-favourite::after {
+            content: url(../img/header/header-top/heart.svg);
+            margin-left: 4px;
+            width: 16px;
+            height: 16px;
+         }
+         .item-buy::after {
+            content: url(../img/header/header-top/basket.svg);
+            width: 17.5px;
+            height: 17.5px;
+         }
+      }
+   }
+}
+
+.header__main {
+}
+.header-main {
+}
+.header-main__wrapper {
+}
+.header-main__title {
+}
+.header-main__menu {
+}
+.header-menu {
+}
+.header-menu__list {
+}
+.header-menu__item {
+}
+.header-main__search {
+}
+.header-main__button {
+}
