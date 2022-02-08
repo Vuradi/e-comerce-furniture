@@ -19,7 +19,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1173px;
+      width: 1170px;
       height: 100%;
       margin: 0 auto;
 
@@ -64,7 +64,9 @@
             justify-content: space-between;
             align-items: center;
          }
-         .right-bar__item {
+         .right-bar__item:hover {
+            color: rgba(251, 46, 134, 1);
+            cursor: pointer;
          }
          .item-arrow::after {
             content: url(../img/header/header-top/arrow.svg);
@@ -94,22 +96,78 @@
 }
 
 .header__main {
-}
-.header-main {
-}
-.header-main__wrapper {
-}
-.header-main__title {
-}
-.header-main__menu {
-}
-.header-menu {
-}
-.header-menu__list {
-}
-.header-menu__item {
-}
-.header-main__search {
-}
-.header-main__button {
+   width: 1920px;
+   height: 80px;
+   .header-main__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 1170px;
+      height: 83px;
+      .header-main__title {
+         font-family: JosefinSans;
+         font-size: 34px;
+         line-height: 40px;
+         font-weight: 700;
+         color: #0d0e43;
+      }
+      .header-menu {
+         width: 446px;
+         height: 100%;
+      }
+      .header-menu__list {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 100%;
+         .header-menu__item {
+            position: relative;
+            font-family: Lato;
+            font-size: 16px;
+            line-height: 20px;
+            color: #0d0e43;
+            &:hover {
+               color: rgba(251, 46, 134, 1);
+               cursor: pointer;
+            }
+         }
+         .item-arrow::after {
+            content: url(../img/header/arrow-pink.svg);
+            position: absolute;
+            top: -2px;
+            margin-left: 6px;
+            width: 8px;
+            height: 4px;
+         }
+      }
+      .header-main__wrapper-search {
+         position: relative;
+         .header-main__search {
+            width: 317px;
+            height: 40px;
+            border: 2px solid #e7e6ef;
+            box-sizing: border-box;
+            padding: 15px;
+            padding-right: 65px;
+            font-family: Lato;
+            font-size: 14px;
+            color: #0d0e43;
+         }
+         .header-main__button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 51px;
+            height: 100%;
+            background: rgba(251, 46, 134, 1);
+         }
+         .header-main__button::after {
+            content: url(../img/header/loupe.svg);
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+         }
+      }
+   }
 }
