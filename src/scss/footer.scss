@@ -1,8 +1,10 @@
 %tpltitlelist {
    font-family: JosefinSans;
+   font-weight: 600;
    font-size: 22px;
    line-height: 26px;
    color: #000000;
+   margin-bottom: 40px;
 }
 
 %tpltextitem {
@@ -10,6 +12,7 @@
    font-size: 16px;
    line-height: 19px;
    color: #8a8fb9;
+   margin-bottom: 21px;
 }
 
 .footer {
@@ -36,6 +39,7 @@
    display: flex;
    width: 1920px;
    margin-top: 94px;
+   gap: 70px;
    .footer-top__contacts {
       display: flex;
       flex-direction: column;
@@ -45,12 +49,40 @@
          line-height: 40px;
          font-weight: 700;
          color: #0d0e43;
+         margin-bottom: 34px;
       }
-      .footer-top__input {
+      .footer-top__input-wrapper {
+         position: relative;
          width: 377px;
          height: 41px;
-         background: #ffffff;
-         border-radius: 3px;
+         margin-bottom: 25px;
+         .footer-top__input {
+            width: 377px;
+            height: 41px;
+            background: #ffffff;
+            border-radius: 3px;
+            padding: 5px 154px 5px 20px;
+         }
+         .footer-top__btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 135px;
+            height: 41px;
+            background: #fb2e86;
+            border-radius: 3px;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #eeeffb;
+         }
+      }
+      .footer-top__contact-title {
+         @extend %tpltextitem;
+      }
+      .footer-top__address {
+         @extend %tpltextitem;
       }
    }
    .footer-top_categories {
@@ -66,41 +98,54 @@
             @extend %tpltextitem;
          }
       }
-      .footer-top_customer-care {
+   }
+   .footer-top_customer-care {
+      display: flex;
+      flex-direction: column;
+      .footer-top_customer-care__title {
+         @extend %tpltitlelist;
+      }
+      .footer-top_customer-care__list {
          display: flex;
          flex-direction: column;
-         .footer-top_customer-care__title {
-            @extend %tpltitlelist;
+         .footer-top_customer-care__item {
+            @extend %tpltextitem;
          }
-         .footer-top_customer-care__list {
-            display: flex;
-            flex-direction: column;
-            .footer-top_customer-care__item {
-               @extend %tpltextitem;
-            }
-         }
-         .footer-top_pages {
-            display: flex;
-            flex-direction: column;
-            .footer-top_pages__title {
-               @extend %tpltitlelist;
-            }
-            .footer-top_pages__list {
-               display: flex;
-               flex-direction: column;
-               .footer-top_pages__item {
-                  @extend %tpltextitem;
-               }
-            }
+      }
+   }
+   .footer-top_pages {
+      display: flex;
+      flex-direction: column;
+      .footer-top_pages__title {
+         @extend %tpltitlelist;
+      }
+      .footer-top_pages__list {
+         display: flex;
+         flex-direction: column;
+         .footer-top_pages__item {
+            @extend %tpltextitem;
          }
       }
    }
 }
 
 .footer__botttom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    width: 1170px;
    height: 53px;
    margin: 0 auto;
+   .footer-bottom__title {
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #9da0ae;
+   }
    .footer-bottom__follow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
    }
 }
