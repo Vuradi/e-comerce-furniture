@@ -76,6 +76,9 @@
             font-size: 16px;
             line-height: 19px;
             color: #eeeffb;
+            &:hover {
+               color: yellow;
+            }
          }
       }
       .footer-top__contact-title {
@@ -96,6 +99,9 @@
          flex-direction: column;
          .footer-top_categories__item {
             @extend %tpltextitem;
+            &:hover {
+               color: rgba(251, 46, 134, 1);
+            }
          }
       }
    }
@@ -110,6 +116,9 @@
          flex-direction: column;
          .footer-top_customer-care__item {
             @extend %tpltextitem;
+            &:hover {
+               color: rgba(251, 46, 134, 1);
+            }
          }
       }
    }
@@ -124,6 +133,9 @@
          flex-direction: column;
          .footer-top_pages__item {
             @extend %tpltextitem;
+            &:hover {
+               color: rgba(251, 46, 134, 1);
+            }
          }
       }
    }
