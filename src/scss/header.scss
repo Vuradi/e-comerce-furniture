@@ -65,6 +65,7 @@
             align-items: center;
          }
          .right-bar__item:hover {
+            transition: all 0.2s ease-in;
             color: rgba(251, 46, 134, 1);
             cursor: pointer;
          }
@@ -127,6 +128,7 @@
             font-size: 16px;
             line-height: 20px;
             color: #0d0e43;
+            transition: all 0.2s ease-in;
             &:hover {
                color: rgba(251, 46, 134, 1);
                cursor: pointer;
