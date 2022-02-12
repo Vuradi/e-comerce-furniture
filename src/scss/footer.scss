@@ -17,14 +17,15 @@
 
 .footer {
    position: relative;
-   width: 1920px;
+   width: 100%;
    height: 532px;
    background: #eeeffb;
 }
 
 .footer-top__wrapper {
-   width: 1170px;
+   width: 1270px;
    margin: 0 auto;
+   padding: 0 50px;
 }
 
 .footer-bottom__wrapper {
@@ -36,10 +37,14 @@
 }
 
 .footer__top {
-   display: flex;
    width: 1920px;
    margin-top: 94px;
-   gap: 70px;
+   .footer__top__container {
+      display: flex;
+      gap: 70px;
+      max-width: 1270px;
+      padding: 0 50px;
+   }
    .footer-top__contacts {
       display: flex;
       flex-direction: column;
@@ -145,9 +150,10 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 1170px;
+   max-width: 1270px;
    height: 53px;
    margin: 0 auto;
+   padding: 0 50px;
    .footer-bottom__title {
       font-family: Lato;
       font-weight: 400;
